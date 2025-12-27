@@ -1,0 +1,53 @@
+<%- layout("./layouts/boilerplate.ejs") %>
+<br>
+<div class="row offset-2">
+    <div class="col-8">
+<h3>Create a listing</h3>
+    <form method="post" action="/listings" class="needs-validation"  novalidate enctype="multipart/form-data" >
+    <div class="mb-3" >
+    <label for="title" class="form-label">Enter title</label>
+    <input type="text" placeholder="Enter title" name="title" class="form-control" required>
+    <div class="invalid-feedback">title should be valid</div>
+</div>
+
+<div class="mb-3" >
+    <label for="description" class="form-label">Enter Description</label>
+    <textarea placeholder="Enter description" name="description" class="form-control" required></textarea>
+    <div class="invalid-feedback">description should be valid</div>
+</div>
+
+<!-- <div class="mb-3">
+    <label for="image" class="form-label">Enter url</label>
+    <input type="text" placeholder="Enter image URL" name="image"  class="form-control" >
+</div> -->
+
+<div class="mb-3">
+    <label for="image" class="form-label">Uplord image</label>
+    <input type="file" placeholder="Enter image URL" name="image"  class="form-control" >
+</div>
+<div class="row">
+<div class="mb-3 col-md-4">
+    <label for="price" class="form-label">Enter price</label>
+    <input type="text" placeholder="1200" name="price"  class="form-control" required>
+    <div class="invalid-feedback">price should be valid</div>
+</div>
+<div class="mb-3 col-md-8" >
+    <label for="country" class="form-label">Enter country</label>
+    <input type="text" placeholder="india" name="country"  class="form-control" required>
+    <div class="invalid-feedback">country should be valid</div>
+</div>
+
+</div>
+
+
+<div class="mb-3" >
+    <label for="location" class="form-label">Enter location</label>
+    <input type="text" placeholder="udipur,rajasthan" name="location"  class="form-control" required>
+    <div class="invalid-feedback">location should be valid</div>
+</div>
+
+        <button class="btn btn-dark btn-add" type="submit" style="background-color: red; border: none;">add</button>
+    </form>
+
+</div>
+</div>

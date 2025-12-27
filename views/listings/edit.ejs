@@ -1,0 +1,48 @@
+<%- layout("./layouts/boilerplate.ejs")%>
+<body>
+    <h1>update</h1>
+    <form  method="post" action="/listings/<%=data._id%>/edit?_method=PUT" class="needs-validation"  novalidate >
+  <div class="mb-3" >
+    <label for="title" class="form-label">Enter title</label>
+    <input type="text" placeholder="Enter title" name="title" class="form-control" value="<%=data.title%>" required>
+        <div class="invalid-feedback">title should be valid</div>
+  
+</div>
+
+<div class="mb-3" >
+    <label for="description" class="form-label">Enter Description</label>
+    <textarea placeholder="Enter description" name="description" class="form-control"  required><%=data.description%></textarea>
+        <div class="invalid-feedback">description should be valid</div>
+     
+</div>
+
+<div class="mb-3">
+    <label for="image" class="form-label">Enter url</label>
+    <input type="text" placeholder="Enter image URL" name="image"  class="form-control" value="<%=data.image%>" required>
+        <div class="invalid-feedback">image should be valid</div>
+</div>
+<div class="row">
+<div class="mb-3 col-md-4">
+    <label for="price" class="form-label">Enter price</label>
+    <input type="text" placeholder="1200" name="price"  class="form-control"  value="<%=data.price%>" required>
+        <div class="invalid-feedback">price should be valid</div>
+</div>
+<div class="mb-3 col-md-8" >
+    <label for="country" class="form-label">Enter country</label>
+    <input type="text" placeholder="india" name="country"  class="form-control" value="<%=data.country%>" required>
+        <div class="invalid-feedback">country should be valid</div>
+</div>
+
+</div>
+
+
+<div class="mb-3" >
+    <label for="location" class="form-label">Enter location</label>
+    <input type="text" placeholder="udipur,rajasthan" name="location"  class="form-control" value="<%=data.location%>" required>
+         <div class="invalid-feedback">location should be valid</div>
+</div>
+
+           <button>update</button>
+</form>
+</body>
+</html>
