@@ -41,12 +41,17 @@ npm install
 Step 3: Create a .env File
 The .env file is not included for security reasons. You must create it manually.
 
-📁 Create a file named .env in the root directory and add:
+📁 Create a file named .env in the root directory and add: 
+-you have to sign in (https://cloudinary.com/) u will get the details of following : (no need to use comma's)
+ CODE::
 
-CLOUD_NAME=your_cloudinary_cloud_name CLOUD_API_KEY=your_cloudinary_api_key CLOUD_API_SECRET=your_cloudinary_api_secret
+ 
+CLOUD_NAME=your_cloudinary_cloud_name
+CLOUD_API_KEY=your_cloudinary_api_key
+CLOUD_API_SECRET=your_cloudinary_api_secret
 
 Step 4: Start the Server
 nodemon app.js
 
 Step 5: Open in Browser
-http://localhost:3000
+http://localhost:3000/listings
