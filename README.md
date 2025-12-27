@@ -18,6 +18,7 @@ Authentication: Passport.js, Sessions
 Cloud Services: Cloudinary
 Tools: Git, GitHub, npm
 
+    STEPS:::::
 ⚙️ How to Run the Project Locally (Step-by-Step)
 Step 1: Clone the Repository
 Step 2: Install Dependencies  (already mentioned in package.json) =>cloudinary": "^1.41.3",
