@@ -21,7 +21,7 @@ Tools: Git, GitHub, npm
     STEPS:::::
 ⚙️ How to Run the Project Locally (Step-by-Step)
 Step 1: Clone the Repository
-Step 2: Install Dependencies  (already mentioned in package.json) =>cloudinary": "^1.41.3",
+Step 2: Install Dependencies  (already mentioned in package.json FILE) =>cloudinary": "^1.41.3",
     "connect-flash": "^0.1.1",
     "dotenv": "^17.2.3",
     "ejs": "^3.1.10",
