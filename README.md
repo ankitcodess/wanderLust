@@ -17,9 +17,24 @@ Database: MongoDB, Mongoose
 Authentication: Passport.js, Sessions
 Cloud Services: Cloudinary
 Tools: Git, GitHub, npm
+
 ⚙️ How to Run the Project Locally (Step-by-Step)
 Step 1: Clone the Repository
-Step 2: Install Dependencies
+Step 2: Install Dependencies  (already mentioned in package.json) =>cloudinary": "^1.41.3",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
+    "ejs-mate": "^4.0.0",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "joi": "^18.0.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.19.3",
+    "multer": "^2.0.2",
+    "multer-storage-cloudinary": "^4.0.0",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^8.0.0"
 npm install
 
 Step 3: Create a .env File
